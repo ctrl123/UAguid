@@ -23,7 +23,7 @@
         android:text="UA > Carte"
         android:textAllCaps="false"
         android:textColorLink="@android:color/white"
-        android:textSize="@dimen/_340sdp"
+        android:textSize="@dimen/_40ssp"
         android:textStyle="bold"
         app:font="Franklin Gothic Heavy Regular.ttf" />
 
