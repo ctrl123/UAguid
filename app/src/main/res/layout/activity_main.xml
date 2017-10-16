@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ctrl123.uaguid.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/interface_main" />
+
+    <TextView
+        android:id="@+id/titre_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="14dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="UA-Guid"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_scolaire"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:background="@drawable/bouton_scolarite"
+        android:layout_above="@+id/button_crous"
+        android:layout_alignRight="@+id/button_carte"
+        android:layout_alignEnd="@+id/button_carte" />
+
+    <Button
+        android:id="@+id/button_sport"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:background="@drawable/bouton_sport"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/button_scolaire"
+        android:layout_toEndOf="@+id/button_scolaire" />
+
+    <Button
+        android:id="@+id/button_carte"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:background="@drawable/bouton_carte"
+        android:layout_below="@+id/button_sport"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button_crous"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:background="@drawable/bouton_crous"
+        android:layout_above="@+id/button_carte"
+        android:layout_toLeftOf="@+id/button_carte"
+        android:layout_toStartOf="@+id/button_carte" />
+
+</RelativeLayout>
