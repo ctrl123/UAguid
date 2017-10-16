@@ -13,21 +13,18 @@
         android:layout_height="wrap_content"
         android:background="@drawable/interface_carte" />
 
-    <TextView
-        android:id="@+id/titre_carte"
+    <com.ctrl123.uaguid.CustomTextView
+        android:id="@+id/titre_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="34dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="14dp"
-        android:fontFamily="sans-serif-condensed"
         android:text="UA > Carte"
-        android:textAlignment="viewStart"
         android:textAllCaps="false"
+        android:textColorLink="@android:color/white"
         android:textSize="36sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:font="Franklin Gothic Heavy Regular.ttf" />
 
 </RelativeLayout>
