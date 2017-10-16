@@ -23,7 +23,7 @@
         android:text="UA > Scolaire"
         android:textAllCaps="false"
         android:textColorLink="@android:color/white"
-        android:textSize="36sp"
+        android:textSize="@dimen/_340sdp"
         android:textStyle="bold"
         app:font="Franklin Gothic Heavy Regular.ttf" />
 </RelativeLayout>

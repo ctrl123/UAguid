@@ -26,43 +26,44 @@
         android:text="UA-Guid"
         android:textAllCaps="false"
         android:textColorLink="@android:color/white"
-        android:textSize="36sp"
+        android:textSize="@dimen/_40sdp"
         android:textStyle="bold"
         app:font="Franklin Gothic Heavy Regular.ttf" />
 
     <Button
         android:id="@+id/button_scolaire"
-        android:layout_width="78dp"
-        android:layout_height="78dp"
+        android:layout_width="@dimen/_59sdp"
+        android:layout_height="@dimen/_59sdp"
         android:background="@drawable/bouton_scolarite"
-        android:layout_above="@+id/button_crous"
+        android:layout_above="@+id/button_sport"
         android:layout_alignRight="@+id/button_carte"
         android:layout_alignEnd="@+id/button_carte" />
 
     <Button
         android:id="@+id/button_sport"
-        android:layout_width="78dp"
-        android:layout_height="78dp"
-        android:background="@drawable/bouton_sport"
+        android:layout_width="@dimen/_59sdp"
+        android:layout_height="@dimen/_59sdp"
         android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/button_scolaire"
         android:layout_toRightOf="@+id/button_scolaire"
-        android:layout_toEndOf="@+id/button_scolaire" />
+        android:background="@drawable/bouton_sport" />
 
     <Button
         android:id="@+id/button_carte"
-        android:layout_width="78dp"
-        android:layout_height="78dp"
-        android:background="@drawable/bouton_carte"
+        android:layout_width="@dimen/_59sdp"
+        android:layout_height="@dimen/_59sdp"
         android:layout_below="@+id/button_sport"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bouton_carte"
+        android:elevation="0dp" />
 
     <Button
         android:id="@+id/button_crous"
-        android:layout_width="78dp"
-        android:layout_height="78dp"
-        android:background="@drawable/bouton_crous"
+        android:layout_width="@dimen/_59sdp"
+        android:layout_height="@dimen/_59sdp"
         android:layout_above="@+id/button_carte"
         android:layout_toLeftOf="@+id/button_carte"
-        android:layout_toStartOf="@+id/button_carte" />
+        android:layout_toStartOf="@+id/button_carte"
+        android:background="@drawable/bouton_crous" />
 
 </RelativeLayout>
