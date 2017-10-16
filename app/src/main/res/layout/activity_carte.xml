@@ -11,20 +11,32 @@
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/interface_carte" />
+        android:background="@drawable/interface_carte"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <com.ctrl123.uaguid.CustomTextView
         android:id="@+id/titre_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:text="UA > Carte"
         android:textAllCaps="false"
         android:textColorLink="@android:color/white"
-        android:textSize="@dimen/_40ssp"
+        android:textSize="@dimen/_32ssp"
         android:textStyle="bold"
-        app:font="Franklin Gothic Heavy Regular.ttf" />
+        app:font="Franklin Gothic Heavy Regular.ttf"
+        android:layout_alignParentTop="true" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/titre_main"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/carte_ua" />
 
 </RelativeLayout>
