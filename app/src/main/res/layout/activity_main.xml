@@ -16,7 +16,7 @@
         android:layout_alignParentTop="true"
         android:background="@drawable/interface_main" />
 
-    <TextView
+    <com.ctrl123.uaguid.CustomTextView
         android:id="@+id/titre_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -26,12 +26,11 @@
         android:layout_marginLeft="34dp"
         android:layout_marginStart="34dp"
         android:layout_marginTop="14dp"
-        android:fontFamily="sans-serif-condensed"
         android:text="UA-Guid"
-        android:textAlignment="viewStart"
         android:textAllCaps="false"
         android:textSize="36sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:font="Franklin Gothic Heavy Regular.ttf" />
 
     <Button
         android:id="@+id/button_scolaire"
