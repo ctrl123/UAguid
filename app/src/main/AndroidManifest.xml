@@ -4,9 +4,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/uaguid_logotest5"
+        android:icon="@mipmap/ug_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/uaguid_logotest5"
+        android:roundIcon="@mipmap/ug_launcher"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity android:name=".MainActivity">
@@ -19,7 +19,7 @@
         <activity android:name=".Carte" />
         <activity android:name=".Crous" />
         <activity android:name=".Scolaire" />
-        <activity android:name=".Sport"></activity>
+        <activity android:name=".Sport"/>
     </application>
 
 </manifest>

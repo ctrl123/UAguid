@@ -14,7 +14,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:background="@drawable/interface_main" />
+        android:background="@drawable/interface_main"
+        android:contentDescription="@string/background_description" />
 
     <com.ctrl123.uaguid.CustomTextView
         android:id="@+id/titre_main"
@@ -23,7 +24,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:text="UA-Guid"
+        android:text="@string/main_title"
         android:textAllCaps="false"
         android:textColorLink="@android:color/white"
         android:textSize="@dimen/_40ssp"
@@ -54,8 +55,7 @@
         android:layout_height="@dimen/_59sdp"
         android:layout_below="@+id/button_sport"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/bouton_carte"
-        android:elevation="0dp" />
+        android:background="@drawable/bouton_carte" />
 
     <Button
         android:id="@+id/button_crous"

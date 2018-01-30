@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Uaguid</string>
+    <string name="ug_sport_title">UG - Sport</string>
+    <string name="background_description">Background image</string>
+    <string name="ug_scolaire_title">UA - Scolarité</string>
+    <string name="main_title">UA Guid</string>
+    <string name="ug_crous_title">UA - Crous</string>
+    <string name="ug_carte_title">UA - Carte</string>
+    <string name="map_image">Carte du campus - image</string>
 </resources>
