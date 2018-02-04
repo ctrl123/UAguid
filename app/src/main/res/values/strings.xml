@@ -7,4 +7,5 @@
     <string name="ug_crous_title">UA - Crous</string>
     <string name="ug_carte_title">UA - Carte</string>
     <string name="map_image">Carte du campus - image</string>
+    <string name="closeBtnText">X</string>
 </resources>

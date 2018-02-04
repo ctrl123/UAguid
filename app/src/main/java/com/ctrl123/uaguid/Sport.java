@@ -1,13 +1,12 @@
 package com.ctrl123.uaguid;
 
 import android.app.ProgressDialog;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -63,55 +62,42 @@ public class Sport extends AppCompatActivity {
                 String textQ = questionList.get(position).get("question");
                 String textR = questionList.get(position).get("reponse");
 
-                //Declarations des variables utilisées
-                LinearLayout layout;
-                LinearLayout.LayoutParams params1, params2, params3;
+                LayoutInflater inflater = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
+
                 TextView popupTextQ, popupTextR;
                 Button closeBtn;
 
-                //Initalisation du Layout
-                layout = new LinearLayout(Sport.this);
-                layout.setOrientation(LinearLayout.VERTICAL);
+                //On charge le layout personnalisé dans une view
+                View customView = inflater.inflate(R.layout.popup_layout, null);
 
-                //TextView Question
-                popupTextQ = new TextView(Sport.this);
-                params1 = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT,
-                        LinearLayout.LayoutParams.WRAP_CONTENT);
+                //Initialisation popup avec la view personnalisées
+                popUp = new PopupWindow(
+                        customView,
+                        LinearLayout.LayoutParams.WRAP_CONTENT,
+                        LinearLayout.LayoutParams.WRAP_CONTENT
+
+                );
+
+                //Ajout des infos dans les éléments de la popup
+                popupTextQ = (TextView) customView.findViewById(R.id.questionText);
                 popupTextQ.setText(textQ);
-                popupTextQ.setTextColor(Color.BLACK);
-                popupTextQ.setTextSize(20);
-                layout.addView(popupTextQ, params1);
 
-                //TextView Reponse
-                popupTextR = new TextView(Sport.this);
-                params2 = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT,
-                        LinearLayout.LayoutParams.WRAP_CONTENT);
+                popupTextR = (TextView) customView.findViewById(R.id.reponseText);
                 popupTextR.setText(textR);
-                popupTextR.setTextColor(Color.BLACK);
-                popupTextR.setTextSize(20);
-                layout.addView(popupTextR, params2);
 
-                //Bouton fermer
-                closeBtn = new Button(Sport.this);
-                params3 = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT,
-                        LinearLayout.LayoutParams.WRAP_CONTENT);
-                closeBtn.setText("X");
+                //Bouton pour fermer
+                closeBtn = (Button) customView.findViewById(R.id.closeButton);
                 closeBtn.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         popUp.dismiss();
                     }
                 });
-                layout.addView(closeBtn, params3);
 
-                //Initialisation et affichage popUp
-                popUp = new PopupWindow(layout, LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT);
-                popUp.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-                popUp.showAtLocation(findViewById(R.id.sport_layout), Gravity.CENTER, 500, 500);
+                //Affichage de la popup
+                popUp.showAtLocation(findViewById(R.id.sport_layout), Gravity.CENTER, 0, 0);
             }
         });
-
-
 
     }
 
@@ -129,7 +115,7 @@ public class Sport extends AppCompatActivity {
             super.onPreExecute();
             // Showing progress dialog
             pDialog = new ProgressDialog(Sport.this);
-            pDialog.setMessage("Data is loagding, please wait...");
+            pDialog.setMessage("Data is loading, please wait...");
             pDialog.setCancelable(false);
             pDialog.show();
 
