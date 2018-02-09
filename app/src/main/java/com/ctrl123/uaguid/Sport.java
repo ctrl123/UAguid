@@ -1,6 +1,7 @@
 package com.ctrl123.uaguid;
 
 import android.app.ProgressDialog;
+import android.graphics.Color;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -39,7 +40,7 @@ public class Sport extends AppCompatActivity {
     PopupWindow popUp;
 
     // URL to get JSON
-    private static String urlperso = "http://" + ip + "/UAGuid/JSON.php";
+    private String urlperso = "http://" + ip + "/UAGuid/JSON.php?sujet=sport";
 
     ArrayList<HashMap<String, String>> questionList;
 
@@ -87,6 +88,7 @@ public class Sport extends AppCompatActivity {
 
                 //Bouton pour fermer
                 closeBtn = (Button) customView.findViewById(R.id.closeButton);
+                closeBtn.setBackgroundColor(Color.parseColor("#BECC07"));
                 closeBtn.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -197,7 +199,7 @@ public class Sport extends AppCompatActivity {
                 pDialog.dismiss();
             /**
              * Updating parsed JSON data into ListView
-             * */
+             **/
             ListAdapter adapter = new SimpleAdapter(
                     Sport.this, questionList,
                     R.layout.list_item, new String[]{"question"}, new int[]{R.id.textView});
