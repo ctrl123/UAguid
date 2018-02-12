@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/UAguid.iml" filepath="$PROJECT_DIR$/UAguid.iml" />
+      <module fileurl="file://C:\Users\ARGIRE-STS\StudioProjects\UAguid\UAguid.iml" filepath="C:\Users\ARGIRE-STS\StudioProjects\UAguid\UAguid.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\ARGIRE-STS\StudioProjects\UAguid\app\app.iml" filepath="C:\Users\ARGIRE-STS\StudioProjects\UAguid\app\app.iml" />
     </modules>
   </component>
 </project>

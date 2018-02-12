@@ -18,7 +18,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Carte" />
+        <activity android:name=".Carte"
+            android:screenOrientation="landscape"
+            />
         <activity android:name=".Crous" />
         <activity android:name=".Scolaire" />
         <activity android:name=".Sport"/>
