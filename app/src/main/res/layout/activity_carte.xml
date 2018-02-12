@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context="com.ctrl123.uaguid.Carte">
 
-
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
@@ -29,8 +28,8 @@
         android:textStyle="bold"
         app:font="Franklin Gothic Heavy Regular.ttf" />
 
-    <ImageView
-        android:id="@+id/imageView6"
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/photo_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@id/imageView3"
@@ -44,6 +43,7 @@
         android:contentDescription="@string/map_image"
         android:cropToPadding="true"
         android:scaleType="fitXY"
-        app:srcCompat="@drawable/carte_ua" />
+    />
+
 
 </RelativeLayout>

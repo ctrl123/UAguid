@@ -1,8 +1,11 @@
 package com.ctrl123.uaguid;
 
+import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
+
+import com.github.chrisbanes.photoview.PhotoView;
 
 public class Carte extends AppCompatActivity {
 
@@ -13,6 +16,7 @@ public class Carte extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_carte);
 
-        carte_ua = (ImageView) findViewById(R.id.imageView6);
+        PhotoView photoView = (PhotoView) findViewById(R.id.photo_view);
+        photoView.setImageResource(R.drawable.carte_ua);
     }
 }
