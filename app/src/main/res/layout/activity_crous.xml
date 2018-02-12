@@ -12,7 +12,7 @@
         android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/interface_crous"
+        android:background="@drawable/interface_crous_bas_nuit"
         android:contentDescription="@string/background_description" />
 
     <com.ctrl123.uaguid.CustomTextView
@@ -24,6 +24,7 @@
         android:layout_alignParentTop="true"
         android:text="@string/ug_crous_title"
         android:textAllCaps="false"
+        android:textColor="@android:color/black"
         android:textColorLink="@android:color/white"
         android:textSize="@dimen/_40ssp"
         android:textStyle="bold"
@@ -35,10 +36,9 @@
         android:layout_height="match_parent"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/titre_main"
-        android:layout_marginTop="22dp"
         android:alpha="0.8"
         android:background="@android:color/background_light"
         android:divider="@android:color/holo_red_light"
-        android:dividerHeight="1dp" />
+        android:dividerHeight="1dp"
+        android:layout_below="@+id/titre_main" />
 </RelativeLayout>
